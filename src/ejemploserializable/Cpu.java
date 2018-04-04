@@ -6,8 +6,8 @@ import java.io.Serializable;
  *
  * @author ssahuquilloembade
  */
-public class Cpu implements Serializable{
-    
+public class Cpu implements Serializable {
+
     private int velocidade;
     private int memoria;
 
@@ -15,11 +15,13 @@ public class Cpu implements Serializable{
     public Cpu() {
     }
 //Constructor por parámetros
+
     public Cpu(int velocidade, int memoria) {
         this.velocidade = velocidade;
         this.memoria = memoria;
     }
 //Getters
+
     public int getVelocidade() {
         return velocidade;
     }
@@ -28,6 +30,7 @@ public class Cpu implements Serializable{
         return memoria;
     }
 //Setters
+
     public void setVelocidade(int velocidade) {
         this.velocidade = velocidade;
     }
@@ -36,11 +39,10 @@ public class Cpu implements Serializable{
         this.memoria = memoria;
     }
 //ToString
+
     @Override
     public String toString() {
         return "CPU\n" + "velocidade=" + velocidade + "\nmemoria=" + memoria;
     }
-    
-    
 
 }

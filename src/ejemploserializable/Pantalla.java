@@ -6,7 +6,7 @@ import java.io.Serializable;
  *
  * @author ssahuquilloembade
  */
-public class Pantalla implements Serializable{
+public class Pantalla implements Serializable {
 
     private String marca;
     private float pulgadas;
@@ -15,11 +15,13 @@ public class Pantalla implements Serializable{
     public Pantalla() {
     }
 //Constructor por parámetros
+
     public Pantalla(String marca, float pulgadas) {
         this.marca = marca;
         this.pulgadas = pulgadas;
     }
 //Getters
+
     public String getMarca() {
         return marca;
     }
@@ -28,6 +30,7 @@ public class Pantalla implements Serializable{
         return pulgadas;
     }
 //Setters
+
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -36,10 +39,10 @@ public class Pantalla implements Serializable{
         this.pulgadas = pulgadas;
     }
 //ToString
+
     @Override
     public String toString() {
         return "Pantalla\n" + "marca=" + marca + "\npulgadas=" + pulgadas;
     }
-    
-    
+
 }
